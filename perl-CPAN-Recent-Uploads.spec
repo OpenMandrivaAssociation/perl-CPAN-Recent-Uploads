@@ -1,9 +1,9 @@
 %define upstream_name    CPAN-Recent-Uploads
-%define upstream_version 0.02
+%define upstream_version 0.06
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Retrieves recentfiles from a CPAN mirror
 License:    GPL+ or Artistic
