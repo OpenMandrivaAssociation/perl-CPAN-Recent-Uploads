@@ -1,11 +1,12 @@
 %define upstream_name    CPAN-Recent-Uploads
-%define upstream_version 0.06
+%define upstream_version 0.08
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Retrieves recentfiles from a CPAN mirror
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -44,16 +45,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Tue Jul 05 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.60.0-1mdv2011.0
-+ Revision: 688742
-- update to new version 0.06
-
-* Sun Apr 17 2011 Funda Wang <fwang@mandriva.org> 0.20.0-2
-+ Revision: 654241
-- rebuild for updated spec-helper
-
-* Sat Dec 25 2010 Shlomi Fish <shlomif@mandriva.org> 0.20.0-1mdv2011.0
-+ Revision: 625007
-- import perl-CPAN-Recent-Uploads
 
