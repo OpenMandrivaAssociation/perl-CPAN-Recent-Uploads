@@ -1,16 +1,16 @@
 %define upstream_name    CPAN-Recent-Uploads
-%define upstream_version 0.08
+%define upstream_version 0.16
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Retrieves recentfiles from a CPAN mirror
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/bingos/cpan-recent-uploads
+Source0:	https://cpan.metacpan.org/authors/id/B/BI/BINGOS/CPAN-Recent-Uploads-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
