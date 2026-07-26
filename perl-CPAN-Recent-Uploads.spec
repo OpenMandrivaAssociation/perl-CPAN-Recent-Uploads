@@ -1,16 +1,14 @@
 %define upstream_name    CPAN-Recent-Uploads
-%define upstream_version 0.16
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.16
+Release:	2
 
 Summary:	Retrieves recentfiles from a CPAN mirror
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/bingos/cpan-recent-uploads
-Source0:	https://cpan.metacpan.org/authors/id/B/BI/BINGOS/CPAN-Recent-Uploads-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BI/BINGOS/CPAN-Recent-Uploads-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -30,7 +28,7 @@ File::Rsync::Mirror::Recentfile manpage that exist in the 'authors/'
 directory on 'CPAN'.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
